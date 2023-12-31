@@ -1,0 +1,70 @@
+@import "https://unpkg.com/open-props" layer(design.system);
+@import "https://unpkg.com/open-props/normalize.min.css" layer(demo.support);
+
+@layer demo {
+  #box{
+    inline-size: var(--size-content-2);
+    aspect-ratio: var(--ratio-widescreen);
+    border: solid var(--size-2) transparent;
+    border-radius: var(--radius-4);
+    background: 
+      linear-gradient(var(--surface-1), var(--surface-1)) padding-box, 
+      var(--gradient-1) border-box;
+  }
+}
+
+@layer demo.support {
+  body {
+    display: grid;
+    place-content: center;
+    padding: var(--size-5);
+    gap: var(--size-5);
+  } 
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#box{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#box2{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tempo{
+
+  margin: 0 ;
+  padding: 0 3%;
+  background-color: rgba(192, 192, 192, 0.1);
+ 
+
+}
+
+h3{
+
+  padding-bottom: 2%;
+
+}
+
+#mensagem{
+
+  padding-top: 1%;
+
+}

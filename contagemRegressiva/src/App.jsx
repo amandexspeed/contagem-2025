@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
 
-  var dataContagem = new Date("Jan 1, 2024 00:00:00").getTime();
+  var dataContagem = new Date("Jan 1, 2025 00:00:00").getTime();
 
   var x = setInterval(function() {
 
@@ -31,7 +31,7 @@ function App() {
       document.getElementById('minutos').textContent = "0";
       document.getElementById('horas').textContent = "0";
       document.getElementById('dias').textContent = "0";
-      document.getElementById('mensagem').textContent = "2024 já chegou!";
+      document.getElementById('mensagem').textContent = "2025 já chegou!";
     }
   }, 1000);
 
@@ -39,7 +39,7 @@ function App() {
     <>
       <div id='box'>
 
-        <h3>Contagem para 2024</h3>
+        <h3>Contagem para 2025</h3>
 
         <div id='box2'>
 
